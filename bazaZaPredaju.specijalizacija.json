@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "650a408b757c8e2729e4cb31"
+  },
+  "naziv": "ginekolog"
+},
+{
+  "_id": {
+    "$oid": "650a408b757c8e2729e4cb32"
+  },
+  "naziv": "urolog"
+},
+{
+  "_id": {
+    "$oid": "650a408b757c8e2729e4cb33"
+  },
+  "naziv": "hirurg"
+},
+{
+  "_id": {
+    "$oid": "650a408b757c8e2729e4cb34"
+  },
+  "naziv": "stomatolog"
+},
+{
+  "_id": {
+    "$oid": "650a408b757c8e2729e4cb35"
+  },
+  "naziv": "psiholog"
+}]

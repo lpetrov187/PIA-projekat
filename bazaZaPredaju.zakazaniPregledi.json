@@ -1,0 +1,300 @@
+[{
+  "_id": {
+    "$oid": "650a4426cb7dbd21ad717a10"
+  },
+  "pacijent": "kajle",
+  "pregled": "uroloski pregled 2",
+  "trajanje": "60",
+  "datum": "2023-09-23",
+  "vreme": "08:00",
+  "ogranak": "urologija",
+  "lekar": "mmilos23",
+  "ime_lekara": "Milos",
+  "prezime_lekara": "Matijevic",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4442cb7dbd21ad717a17"
+  },
+  "pacijent": "kajle",
+  "pregled": "ginekoloski pregled 1",
+  "trajanje": "30",
+  "datum": "2023-09-21",
+  "vreme": "11:00",
+  "ogranak": "ginekologija",
+  "lekar": "aco",
+  "ime_lekara": "Aleksandar",
+  "prezime_lekara": "Azanjac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a46b7cb7dbd21ad717a26"
+  },
+  "pacijent": "kajle",
+  "pregled": "pregled lica",
+  "trajanje": "40",
+  "datum": "2023-09-22",
+  "vreme": "08:00",
+  "ogranak": "hirurgija",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a46cbcb7dbd21ad717a2d"
+  },
+  "pacijent": "kajle",
+  "pregled": "vadjenje mlecnog zuba",
+  "trajanje": "30",
+  "datum": "2023-09-24",
+  "vreme": "09:30",
+  "ogranak": "stomatologija",
+  "lekar": "ljilja",
+  "ime_lekara": "Ljiljana",
+  "prezime_lekara": "Krivokuca",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4704cb7dbd21ad717a37"
+  },
+  "pacijent": "matija",
+  "pregled": "uroloski pregled 2",
+  "trajanje": "60",
+  "datum": "2023-09-23",
+  "vreme": "10:30",
+  "ogranak": "urologija",
+  "lekar": "mmilos23",
+  "ime_lekara": "Milos",
+  "prezime_lekara": "Matijevic",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4712cb7dbd21ad717a3e"
+  },
+  "pacijent": "matija",
+  "pregled": "ginekoloski pregled 1",
+  "trajanje": "45",
+  "datum": "2023-09-24",
+  "vreme": "08:30",
+  "ogranak": "ginekologija",
+  "lekar": "aco",
+  "ime_lekara": "Aleksandar",
+  "prezime_lekara": "Azanjac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4721cb7dbd21ad717a45"
+  },
+  "pacijent": "matija",
+  "pregled": "vadjenje mlecnog zuba",
+  "trajanje": "30",
+  "datum": "2023-09-23",
+  "vreme": "14:30",
+  "ogranak": "stomatologija",
+  "lekar": "ljilja",
+  "ime_lekara": "Ljiljana",
+  "prezime_lekara": "Krivokuca",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4734cb7dbd21ad717a4c"
+  },
+  "pacijent": "matija",
+  "pregled": "vadjenje mlecnog zuba",
+  "trajanje": "30",
+  "datum": "2023-09-26",
+  "vreme": "09:30",
+  "ogranak": "stomatologija",
+  "lekar": "ljilja",
+  "ime_lekara": "Ljiljana",
+  "prezime_lekara": "Krivokuca",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a476ccb7dbd21ad717a60"
+  },
+  "pacijent": "velja",
+  "pregled": "ginekoloski pregled 1",
+  "trajanje": "45",
+  "datum": "2023-09-23",
+  "vreme": "14:00",
+  "ogranak": "ginekologija",
+  "lekar": "aco",
+  "ime_lekara": "Aleksandar",
+  "prezime_lekara": "Azanjac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4777cb7dbd21ad717a67"
+  },
+  "pacijent": "velja",
+  "pregled": "pregled lica",
+  "trajanje": "40",
+  "datum": "2023-09-26",
+  "vreme": "09:00",
+  "ogranak": "hirurgija",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4781cb7dbd21ad717a6e"
+  },
+  "pacijent": "velja",
+  "pregled": "vadjenje mlecnog zuba",
+  "trajanje": "30",
+  "datum": "2023-09-22",
+  "vreme": "08:00",
+  "ogranak": "stomatologija",
+  "lekar": "ljilja",
+  "ime_lekara": "Ljiljana",
+  "prezime_lekara": "Krivokuca",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47adcb7dbd21ad717a78"
+  },
+  "pacijent": "bjeko",
+  "pregled": "uroloski pregled 1",
+  "trajanje": "40",
+  "datum": "2023-09-22",
+  "vreme": "09:00",
+  "ogranak": "urologija",
+  "lekar": "mmilos23",
+  "ime_lekara": "Milos",
+  "prezime_lekara": "Matijevic",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47bbcb7dbd21ad717a81"
+  },
+  "pacijent": "bjeko",
+  "pregled": "ginekoloski pregled 1",
+  "trajanje": "45",
+  "datum": "2023-10-05",
+  "vreme": "08:00",
+  "ogranak": "ginekologija",
+  "lekar": "aco",
+  "ime_lekara": "Aleksandar",
+  "prezime_lekara": "Azanjac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47c6cb7dbd21ad717a88"
+  },
+  "pacijent": "bjeko",
+  "pregled": "vadjenje mlecnog zuba",
+  "trajanje": "30",
+  "datum": "2023-10-04",
+  "vreme": "09:30",
+  "ogranak": "stomatologija",
+  "lekar": "ljilja",
+  "ime_lekara": "Ljiljana",
+  "prezime_lekara": "Krivokuca",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47eecb7dbd21ad717a92"
+  },
+  "pacijent": "crki",
+  "pregled": "uroloski pregled 1",
+  "trajanje": "40",
+  "datum": "2023-10-04",
+  "vreme": "08:30",
+  "ogranak": "urologija",
+  "lekar": "mmilos23",
+  "ime_lekara": "Milos",
+  "prezime_lekara": "Matijevic",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47fbcb7dbd21ad717a99"
+  },
+  "pacijent": "crki",
+  "pregled": "pregled lica",
+  "trajanje": "40",
+  "datum": "2023-09-21",
+  "vreme": "16:00",
+  "ogranak": "hirurgija",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4be3757c8e2729e4cb53"
+  },
+  "pacijent": "kajle",
+  "pregled": "uroloski pregled 2",
+  "trajanje": "60",
+  "datum": "2023-09-19",
+  "vreme": "08:00",
+  "ogranak": "urologija",
+  "lekar": "mmilos23",
+  "ime_lekara": "Milos",
+  "prezime_lekara": "Matijevic",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4bfe757c8e2729e4cb54"
+  },
+  "pacijent": "kajle",
+  "pregled": "ginekoloski pregled 1",
+  "trajanje": "30",
+  "datum": "2023-09-15",
+  "vreme": "11:00",
+  "ogranak": "ginekologija",
+  "lekar": "aco",
+  "ime_lekara": "Aleksandar",
+  "prezime_lekara": "Azanjac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4c0f757c8e2729e4cb55"
+  },
+  "pacijent": "kajle",
+  "pregled": "pregled lica",
+  "trajanje": "40",
+  "datum": "2023-09-10",
+  "vreme": "08:00",
+  "ogranak": "hirurgija",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4f2d757c8e2729e4cb69"
+  },
+  "pacijent": "bjeko",
+  "pregled": "pregled lica",
+  "trajanje": "40",
+  "datum": "2023-09-16",
+  "vreme": "08:00",
+  "ogranak": "hirurgija",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "__v": 0
+}]

@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "650a3f25757c8e2729e4cb24"
+  },
+  "lekar": "mmilos23",
+  "pregled": "uroloski pregled 2"
+},
+{
+  "_id": {
+    "$oid": "650a3f25757c8e2729e4cb25"
+  },
+  "lekar": "mmilos23",
+  "pregled": "uroloski pregled 1"
+},
+{
+  "_id": {
+    "$oid": "650a3f25757c8e2729e4cb26"
+  },
+  "lekar": "aco",
+  "pregled": "ginekoloski pregled 1"
+},
+{
+  "_id": {
+    "$oid": "650a3f25757c8e2729e4cb27"
+  },
+  "lekar": "cheketz",
+  "pregled": "pregled lica"
+},
+{
+  "_id": {
+    "$oid": "650a3f25757c8e2729e4cb28"
+  },
+  "lekar": "ljilja",
+  "pregled": "vadjenje mlecnog zuba"
+}]

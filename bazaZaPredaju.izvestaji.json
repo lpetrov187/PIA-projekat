@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "650a4df3757c8e2729e4cb60"
+  },
+  "pacijent": "kajle",
+  "datum": "2023-9-11",
+  "vreme": "18:30",
+  "lekar": "mmilos23",
+  "ime_lekara": "Milos",
+  "prezime_lekara": "Matijevic",
+  "specijalizacija": "urolog",
+  "razlog": "uroloski pregled 2",
+  "dijagnoza": "bez problema",
+  "preporucena_terapija": "bez terapije",
+  "datum_kontrole": "2023-09-29"
+},
+{
+  "_id": {
+    "$oid": "650a4df3757c8e2729e4cb61"
+  },
+  "pacijent": "kajle",
+  "datum": "2023-9-14",
+  "vreme": "15:30",
+  "lekar": "ljilja",
+  "ime_lekara": "Ljiljana",
+  "prezime_lekara": "Krivokuca",
+  "specijalizacija": "stomatolog",
+  "razlog": "vadjenje mlecnog zuba",
+  "dijagnoza": "stanje je stabilno",
+  "preporucena_terapija": "tablete protiv bolova po potrebi",
+  "datum_kontrole": "2023-09-25"
+},
+{
+  "_id": {
+    "$oid": "650a4df3757c8e2729e4cb62"
+  },
+  "pacijent": "matija",
+  "datum": "2023-9-19",
+  "vreme": "10:10",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "specijalizacija": "hirurg",
+  "razlog": "pregled lica",
+  "dijagnoza": "gljivicna infekcija",
+  "preporucena_terapija": "sampon protiv gljivica",
+  "datum_kontrole": "2023-09-30"
+},
+{
+  "_id": {
+    "$oid": "650a4df3757c8e2729e4cb63"
+  },
+  "pacijent": "velja",
+  "datum": "2023-9-15",
+  "vreme": "18:05",
+  "lekar": "ljilja",
+  "ime_lekara": "Ljiljana",
+  "prezime_lekara": "Krivokuca",
+  "specijalizacija": "stomatolog",
+  "razlog": "postavljanje proteze",
+  "dijagnoza": "trenutno stanje stabilno",
+  "preporucena_terapija": "bez terapije",
+  "datum_kontrole": "2023-09-29"
+},
+{
+  "_id": {
+    "$oid": "650a4df3757c8e2729e4cb64"
+  },
+  "pacijent": "crki",
+  "datum": "2023-9-18",
+  "vreme": "13:45",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "specijalizacija": "hirurg",
+  "razlog": "sredjivanje lica",
+  "dijagnoza": "potrebna ponovna intervencija",
+  "preporucena_terapija": "tablete za vitamine",
+  "datum_kontrole": "2023-09-26"
+},
+{
+  "_id": {
+    "$oid": "650a4efd757c8e2729e4cb67"
+  },
+  "pacijent": "bjeko",
+  "datum": "2023-9-19",
+  "vreme": "12:45",
+  "lekar": "cheketz",
+  "ime_lekara": "Ilija",
+  "prezime_lekara": "Cekerevac",
+  "specijalizacija": "hirurg",
+  "razlog": "sredjivanje lica",
+  "dijagnoza": "stabilno",
+  "preporucena_terapija": "bez terapije, kontrola",
+  "datum_kontrole": "2023-09-26"
+}]

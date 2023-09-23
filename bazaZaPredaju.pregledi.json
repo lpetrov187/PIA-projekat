@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb14"
+  },
+  "naziv": "uroloski pregled 1",
+  "cena": "2000",
+  "trajanje": "40",
+  "specijalizacija": "urolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb15"
+  },
+  "naziv": "uroloski pregled 2",
+  "cena": "4000",
+  "trajanje": "60",
+  "specijalizacija": "urolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb16"
+  },
+  "naziv": "ginekoloski pregled 1",
+  "cena": "2500",
+  "trajanje": "45",
+  "specijalizacija": "ginekolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb17"
+  },
+  "naziv": "ginekoloski pregled 2",
+  "cena": "4500",
+  "trajanje": "45",
+  "specijalizacija": "ginekolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb18"
+  },
+  "naziv": "ginekoloski pregled 3",
+  "cena": "10000",
+  "trajanje": "60",
+  "specijalizacija": "ginekolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb19"
+  },
+  "naziv": "pregled umnjaka",
+  "cena": "1500",
+  "trajanje": "30",
+  "specijalizacija": "stomatolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb1a"
+  },
+  "naziv": "postavljanje proteze",
+  "cena": "10000",
+  "trajanje": "60",
+  "specijalizacija": "stomatolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb1b"
+  },
+  "naziv": "vadjenje mlecnog zuba",
+  "cena": "2000",
+  "trajanje": "30",
+  "specijalizacija": "stomatolog"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb1c"
+  },
+  "naziv": "sredjivanje lica",
+  "cena": "5000",
+  "trajanje": "30",
+  "specijalizacija": "hirurg"
+},
+{
+  "_id": {
+    "$oid": "650a3e01757c8e2729e4cb1d"
+  },
+  "naziv": "pregled lica",
+  "cena": "2000",
+  "trajanje": "40",
+  "specijalizacija": "hirurg"
+}]

@@ -1,0 +1,363 @@
+[{
+  "_id": {
+    "$oid": "650a4426cb7dbd21ad717a12"
+  },
+  "pacijent": "kajle",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-23 u 08:00h.",
+  "datum": "2023-09-22",
+  "vreme": "08:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4442cb7dbd21ad717a19"
+  },
+  "pacijent": "kajle",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-21 u 11:00h.",
+  "datum": "2023-09-20",
+  "vreme": "11:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a46b7cb7dbd21ad717a28"
+  },
+  "pacijent": "kajle",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-22 u 08:00h.",
+  "datum": "2023-09-21",
+  "vreme": "08:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a46cbcb7dbd21ad717a2f"
+  },
+  "pacijent": "kajle",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-24 u 09:30h.",
+  "datum": "2023-09-23",
+  "vreme": "09:30",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4704cb7dbd21ad717a39"
+  },
+  "pacijent": "matija",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-23 u 10:30h.",
+  "datum": "2023-09-22",
+  "vreme": "10:30",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4712cb7dbd21ad717a40"
+  },
+  "pacijent": "matija",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-24 u 08:30h.",
+  "datum": "2023-09-23",
+  "vreme": "08:30",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4721cb7dbd21ad717a47"
+  },
+  "pacijent": "matija",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-23 u 14:30h.",
+  "datum": "2023-09-22",
+  "vreme": "14:30",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4734cb7dbd21ad717a4e"
+  },
+  "pacijent": "matija",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-26 u 09:30h.",
+  "datum": "2023-09-25",
+  "vreme": "09:30",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4754cb7dbd21ad717a58"
+  },
+  "pacijent": "velja",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-29 u 08:00h.",
+  "datum": "2023-09-28",
+  "vreme": "08:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a476ccb7dbd21ad717a62"
+  },
+  "pacijent": "velja",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-23 u 14:00h.",
+  "datum": "2023-09-22",
+  "vreme": "14:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4777cb7dbd21ad717a69"
+  },
+  "pacijent": "velja",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-26 u 09:00h.",
+  "datum": "2023-09-25",
+  "vreme": "09:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4781cb7dbd21ad717a70"
+  },
+  "pacijent": "velja",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-22 u 08:00h.",
+  "datum": "2023-09-21",
+  "vreme": "08:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47adcb7dbd21ad717a7a"
+  },
+  "pacijent": "bjeko",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-22 u 09:00h.",
+  "datum": "2023-09-21",
+  "vreme": "09:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47bbcb7dbd21ad717a83"
+  },
+  "pacijent": "bjeko",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-10-05 u 08:00h.",
+  "datum": "2023-10-04",
+  "vreme": "08:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47c6cb7dbd21ad717a8a"
+  },
+  "pacijent": "bjeko",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-10-04 u 09:30h.",
+  "datum": "2023-10-03",
+  "vreme": "09:30",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47eecb7dbd21ad717a94"
+  },
+  "pacijent": "crki",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-10-04 u 08:30h.",
+  "datum": "2023-10-03",
+  "vreme": "08:30",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a47fbcb7dbd21ad717a9b"
+  },
+  "pacijent": "crki",
+  "tekst": "Podsetnik da imate pregled zakazan za 2023-09-21 u 16:00h.",
+  "datum": "2023-09-20",
+  "vreme": "16:00",
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a49f4cb7dbd21ad717abb"
+  },
+  "pacijent": "matija",
+  "tekst": "popust 10% za sve korisnike do kraja septembra",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a49f4cb7dbd21ad717abd"
+  },
+  "pacijent": "velja",
+  "tekst": "popust 10% za sve korisnike do kraja septembra",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a49f4cb7dbd21ad717abf"
+  },
+  "pacijent": "crki",
+  "tekst": "popust 10% za sve korisnike do kraja septembra",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a49f4cb7dbd21ad717ac1"
+  },
+  "pacijent": "kajle",
+  "tekst": "popust 10% za sve korisnike do kraja septembra",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a49f4cb7dbd21ad717ac3"
+  },
+  "pacijent": "bjeko",
+  "tekst": "popust 10% za sve korisnike do kraja septembra",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a01cb7dbd21ad717aca"
+  },
+  "pacijent": "matija",
+  "tekst": "popust za trudnice 20%",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a01cb7dbd21ad717acc"
+  },
+  "pacijent": "velja",
+  "tekst": "popust za trudnice 20%",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a01cb7dbd21ad717ace"
+  },
+  "pacijent": "crki",
+  "tekst": "popust za trudnice 20%",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a01cb7dbd21ad717ad0"
+  },
+  "pacijent": "kajle",
+  "tekst": "popust za trudnice 20%",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a01cb7dbd21ad717ad2"
+  },
+  "pacijent": "bjeko",
+  "tekst": "popust za trudnice 20%",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a2ecb7dbd21ad717ad9"
+  },
+  "pacijent": "matija",
+  "tekst": "svaki 10. pregled dobija 50% popusta",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a2ecb7dbd21ad717adb"
+  },
+  "pacijent": "velja",
+  "tekst": "svaki 10. pregled dobija 50% popusta",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a2ecb7dbd21ad717add"
+  },
+  "pacijent": "crki",
+  "tekst": "svaki 10. pregled dobija 50% popusta",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a2ecb7dbd21ad717adf"
+  },
+  "pacijent": "kajle",
+  "tekst": "svaki 10. pregled dobija 50% popusta",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4a2ecb7dbd21ad717ae1"
+  },
+  "pacijent": "bjeko",
+  "tekst": "svaki 10. pregled dobija 50% popusta",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a4b5fcb7dbd21ad717afe"
+  },
+  "pacijent": "velja",
+  "tekst": "Doktor Milos Matijevic je otkazao pregled \"uroloski pregled 1\" koji je bio zakazan za 2023-09-29 u 08:00. Razlog: porodicne obaveze.",
+  "datum": null,
+  "vreme": null,
+  "procitano": false,
+  "__v": 0
+}]

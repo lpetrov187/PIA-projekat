@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "650a4004757c8e2729e4cb2b"
+  },
+  "naziv": "vadjenje stalnog zuba",
+  "cena": "4000",
+  "trajanje": "30",
+  "specijalizacija": "stomatolog"
+},
+{
+  "_id": {
+    "$oid": "650a4004757c8e2729e4cb2c"
+  },
+  "naziv": "popravljanje mlecnog zuba",
+  "cena": "2500",
+  "trajanje": "20",
+  "specijalizacija": "stomatolog"
+},
+{
+  "_id": {
+    "$oid": "650a4004757c8e2729e4cb2d"
+  },
+  "naziv": "ultrazvuk",
+  "cena": "4000",
+  "trajanje": "40",
+  "specijalizacija": "ginekolog"
+},
+{
+  "_id": {
+    "$oid": "650a4004757c8e2729e4cb2e"
+  },
+  "naziv": "usivanje rane",
+  "cena": "3000",
+  "trajanje": "20",
+  "specijalizacija": "hirurg"
+}]
