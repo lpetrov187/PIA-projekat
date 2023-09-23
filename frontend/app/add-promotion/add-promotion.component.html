@@ -1,0 +1,24 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+
+<table>
+    <tr>
+        <td>Tekst promocije:</td>
+        <td>
+            <input type="text" [(ngModel)]="text">
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button (click)="addPromotion()">Dodaj</button>
+        </td>
+    </tr>
+</table>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

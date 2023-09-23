@@ -1,0 +1,49 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<p><b>Zakazite pregled:</b> {{examination.naziv}}
+    <br>
+    <b>Kod doktora:</b> {{doctor.ime}} {{doctor.prezime}}
+    <br>
+</p>
+<select [(ngModel)]="selected">
+    <option>kalendar</option>
+    <option>forma</option>
+</select>
+<output *ngIf="selected=='kalendar'; then calendarScheduling else formScheduling"></output>
+<ng-template #formScheduling>
+    <table>
+        <tr>
+            <td>
+                Datum pregleda:
+            </td>
+            <td>
+                <input type="date" [(ngModel)]="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Vreme pregleda:
+            </td>
+            <td>
+                <input type="time" [(ngModel)]="time" (input)="validateTime()" [ngClass]="{'invalid-time': !isValidTime}">
+            </td>
+        </tr>
+        <tr colspan="2">
+            <td>
+            </td>
+        </tr>
+    </table>
+</ng-template>
+<output style="color: red" *ngIf="!isValidTime">Ordinacija radi od 7 do 20 casova, a pregledi se zakazuju na pola sata</output>
+<br>
+<ng-template #calendarScheduling>
+    <full-calendar [options]="calendarOptions"></full-calendar>
+</ng-template>
+<button (click)="schedule()">Zakazi</button>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

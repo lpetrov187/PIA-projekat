@@ -1,0 +1,30 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+
+<h3>Menadzer forma za prijavu</h3>
+<table>
+    <tr>
+        <td>Korisnicko ime: </td>
+        <td>
+            <input type="text" [(ngModel)]="username">
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka: </td>
+        <td>
+            <input type="password" [(ngModel)]="password">
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button (click)="login()">Prijavi se</button>
+        </td>
+    </tr>
+</table>
+<output style="color:red">{{this.message}}</output>
+
+
+<footer>
+</footer>

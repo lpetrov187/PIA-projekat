@@ -1,0 +1,64 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+
+<img *ngIf="loggedUser.slika" [src]="loggedUser.slika" alt="Client Image" width="40px" height="40px">
+&nbsp;&nbsp;&nbsp;
+<select [(ngModel)]="selectedPage" (change)="onSelectChange($event)" class="navigation">
+    <option>Profil</option>
+    <option>Lekari</option>
+    <option>Pregledi</option>
+    <option>Obavestenja</option>
+</select>
+<br>
+<h4>Zakazani pregledi</h4>
+<table>
+    <tr>
+        <th>Pregled</th>
+        <th>Datum</th>
+        <th>Vreme</th>
+        <th>Ogranak</th>
+        <th>Lekar</th>
+    </tr>
+    <tr *ngFor="let sa of scheduledAppointments">
+        <td>{{sa.pregled}}</td>
+        <td>{{sa.datum}}</td>
+        <td>{{sa.vreme}}</td>
+        <td>{{sa.ogranak}}</td>
+        <td>{{sa.ime_lekara}} {{sa.prezime_lekara}}</td>
+        <td>
+            <button (click)="cancelAppointment(sa)">Otkazi</button>
+        </td>
+    </tr>
+</table>
+
+<h4>Lekarski izvestaji</h4>
+<table>
+    <tr>
+        <th>Datum</th>
+        <th>Vreme</th>
+        <th>Lekar</th>
+        <th>Specijalizacija</th>
+        <th>Razlog dolaska</th>
+        <th>Dijagnoza</th>
+        <th>Terapija</th>
+        <th>Preporuceni datum kontrole</th>
+    </tr>
+    <tr *ngFor="let cr of customerReports">
+        <td>{{cr.datum}}</td>
+        <td>{{cr.vreme}}</td>
+        <td>{{cr.ime_lekara}} {{cr.prezime_lekara}}</td>
+        <td>{{cr.specijalizacija}}</td>
+        <td>{{cr.razlog}}</td>
+        <td>{{cr.dijagnoza}}</td>
+        <td>{{cr.preporucena_terapija}}</td>
+        <td>{{cr.datum_kontrole}}</td>
+        <td>
+            <button (click)="generatePDF(cr)">Generisi pdf</button>
+        </td>
+    </tr>
+</table>
+
+<footer>
+    <a href="" style="color:white" (click)="logout()">Odjavi se</a>
+</footer>

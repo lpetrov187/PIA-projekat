@@ -1,0 +1,58 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+
+<h3>Karton pacijenta</h3>
+<br>
+<h4>Prethodni izvestaji</h4>
+<table>
+    <tr>
+        <th>Datum</th>
+        <th>Vreme</th>
+        <th>Lekar</th>
+        <th>Specijalizacija</th>
+        <th>Razlog dolaska</th>
+        <th>Dijagnoza</th>
+        <th>Terapija</th>
+        <th>Preporuceni datum kontrole</th>
+    </tr>
+    <tr *ngFor="let cr of customerReports">
+        <td>{{cr.datum}}</td>
+        <td>{{cr.vreme}}</td>
+        <td>{{cr.ime_lekara}} {{cr.prezime_lekara}}</td>
+        <td>{{cr.specijalizacija}}</td>
+        <td>{{cr.razlog}}</td>
+        <td>{{cr.dijagnoza}}</td>
+        <td>{{cr.preporucena_terapija}}</td>
+        <td>{{cr.datum_kontrole}}</td>
+    </tr>
+</table>
+
+<h4>Izvrseni pregledi</h4>
+<table>
+    <tr>
+        <th>Pacijent</th>
+        <th>Pregled</th>
+        <th>Datum</th>
+        <th>Vreme</th>
+        <th>Ogranak</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let sa of customerScheduledAppointments">
+        <td>{{sa.pacijent}}</td>
+        <td>{{sa.pregled}}</td>
+        <td>{{sa.datum}}</td>
+        <td>{{sa.vreme}}</td>
+        <td>{{sa.ogranak}}</td>
+        <td>
+            <button (click)="writeReport(sa)">Napisi izvestaj za pregled</button>
+        </td>
+    </tr>
+</table>
+  
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

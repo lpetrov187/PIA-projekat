@@ -1,0 +1,34 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+
+<table>
+    <tr>
+        <td>Naziv pregleda: </td>
+        <td>{{selectedExamination.naziv}}</td>
+    </tr>
+    <tr>
+        <td>Trajanje: </td>
+        <td>
+            <input type="text" [(ngModel)]="length"> min
+        </td>
+    </tr>
+    <tr>
+        <td>Cena: </td>
+        <td>
+            <input type="text" [(ngModel)]="price"> RSD
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button (click)="updateExamination()">Azuriraj pregled</button>
+        </td>
+    </tr>
+</table>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

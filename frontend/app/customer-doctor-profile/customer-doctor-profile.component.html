@@ -1,0 +1,62 @@
+
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+<img *ngIf="doctor.slika" [src]="doctor.slika" alt="Client Image" width="40px" height="40px">
+<table>
+    <tr>
+        <td><b>Ime:</b></td>
+        <td>{{doctor.ime}}</td>
+    </tr>
+    <tr>
+        <td><b>Prezime:</b></td>
+        <td>{{doctor.prezime}}</td>
+    </tr>
+    <tr>
+        <td><b>Adresa:</b></td>
+        <td>{{doctor.adresa}}</td>
+    </tr>
+    <tr>
+        <td><b>E-mail adresa:</b></td>
+        <td>{{doctor.mejl}}</td>
+    </tr>
+    <tr>
+        <td><b>Telefon:</b></td>
+        <td>{{doctor.telefon}}</td>
+    </tr>
+    <tr>
+        <td><b>Broj licence:</b></td>
+        <td>{{doctor.broj_licence}}</td>
+    </tr>
+    <tr>
+        <td><b>Specijalizacija:</b></td>
+        <td>{{doctor.specijalizacija}}</td>
+    </tr>
+    <tr>
+        <td><b>Ogranak:</b></td>
+        <td>{{doctor.ogranak_ordinacije}}</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Naziv</th>
+        <th>Trajanje</th>
+        <th>Cena</th>
+    </tr>
+    <tr *ngFor="let a of doctorExaminations">
+        <td>{{a.naziv}}</td>
+        <td>{{a.trajanje}}</td>
+        <td>{{a.cena}}</td>
+        <td>
+            <button (click)="schedule(a)">Zakazi pregled</button>
+        </td>
+    </tr>
+</table>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

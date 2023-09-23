@@ -1,0 +1,144 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+<h5>Dobrodosli, {{loggedUser.ime}} {{loggedUser.prezime}}</h5>
+<br>
+<h4>Lekari</h4>
+<table>
+    <tr>
+        <th>Slika</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Specijalizacija</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let a of doctors">
+        <td width="20px"><img *ngIf="a.slika" [src]="a.slika" alt="Client Image" width="40px" height="40px" class="doctorImage"></td>
+        <td>{{a.ime}}</td>
+        <td>{{a.prezime}}</td>
+        <td>{{a.specijalizacija}}</td>
+        <td>
+            <button (click)="updateUser(a)">Azuriraj</button>
+        </td>
+        <td>
+            <button (click)="deleteUser(a)">Obrisi</button>
+        </td>
+    </tr>
+</table>
+<h4>Pacijenti</h4>
+<table>
+    <tr>
+        <th>Slika</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Mejl</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let a of customers">
+        <td width="20px"><img *ngIf="a.slika" [src]="a.slika" alt="Client Image" width="40px" height="40px" class="doctorImage"></td>
+        <td>{{a.ime}}</td>
+        <td>{{a.prezime}}</td>
+        <td>{{a.mejl}}</td>
+        <td>
+            <button (click)="updateUser(a)">Azuriraj</button>
+        </td>
+        <td>
+            <button (click)="deleteUser(a)">Obrisi</button>
+        </td>
+    </tr>
+</table>
+<h4>Zahtevi za registraciju</h4>
+<table>
+    <tr>
+        <th>Slika</th>
+        <th>Korisnicko ime</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Mejl</th>
+        <th>Adresa</th>
+        <th>Telefon</th>
+        <th>Status</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let a of requests">
+        <td width="20px"><img *ngIf="a.slika" [src]="a.slika" alt="Client Image" width="40px" height="40px" class="doctorImage"></td>
+        <td>{{a.korisnicko_ime}}</td>
+        <td>{{a.ime}}</td>
+        <td>{{a.prezime}}</td>
+        <td>{{a.mejl}}</td>
+        <td>{{a.adresa}}</td>
+        <td>{{a.telefon}}</td>
+        <td>{{a.status}}</td>
+        <td>
+            <button (click)="acceptRequest(a)">Prihvati</button>
+        </td>
+        <td>
+            <button (click)="denyRequest(a)">Odbij</button>
+        </td>
+    </tr>
+</table>
+<h4>Pregledi</h4>
+<table>
+    <tr>
+        <th>Naziv</th>
+        <th>Trajanje</th>
+        <th>Cena</th>
+        <th>Specijalizacija</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let a of examinations">
+        <td>{{a.naziv}}</td>
+        <td>{{a.trajanje}}</td>
+        <td>{{a.cena}}</td>
+        <td>{{a.specijalizacija}}</td>
+        <td>
+            <button (click)="updateExamination(a)">Azuriraj</button>
+        </td>
+        <td>
+            <button (click)="deleteExamination(a)">Obrisi</button>
+        </td>
+    </tr>
+</table>
+<h4>Zahtevi za preglede</h4>
+<table>
+    <tr>
+        <th>Naziv</th>
+        <th>Trajanje</th>
+        <th>Cena</th>
+        <th>Specijalizacija</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let a of examinationRequests">
+        <td>{{a.naziv}}</td>
+        <td>{{a.trajanje}}</td>
+        <td>{{a.cena}}</td>
+        <td>{{a.specijalizacija}}</td>
+        <td>
+            <button (click)="acceptExamRequest(a)">Prihvati</button>
+        </td>
+        <td>
+            <button (click)="denyExamRequest(a)">Odbij</button>
+        </td>
+    </tr>
+</table>
+
+<br>
+<button><a routerLink="/register-doctor" style="color:white; text-decoration: none;">Dodaj lekara</a></button>
+&nbsp;&nbsp;&nbsp;
+<button><a routerLink="/add-specialisation" style="color:white; text-decoration: none;">Dodaj specijalizaciju</a></button>
+&nbsp;&nbsp;&nbsp;
+<button><a routerLink="/add-examination" style="color:white; text-decoration: none;">Dodaj pregled</a></button>
+&nbsp;&nbsp;&nbsp;
+<button><a routerLink="/add-promotion" style="color:white; text-decoration: none;">Dodaj promociju</a></button>
+<br><br>
+<button><a routerLink="/changePassword" style="color:white; text-decoration: none;">Promeni lozinku</a></button>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

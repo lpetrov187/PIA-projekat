@@ -1,0 +1,99 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+<select [(ngModel)]="selectedPage" (change)="onSelectChange($event)">
+    <option>Profil</option>
+    <option>Pregledi</option>
+    <option>Razno</option>
+</select>
+<br><br>
+<img *ngIf="loggedUser.slika" [src]="loggedUser.slika" alt="Client Image" width="40px" height="40px">
+<br>
+<button (click)="updatingImg = true" *ngIf="!updatingImg">Azuriraj sliku</button>
+<input type="file"  accept="image/*" (change)="onFileSelected($event)"  [(ngModel)]="selectedFile" required *ngIf="updatingImg">
+<button *ngIf="updatingImg" (click)="updateImg()">Posalji</button>
+<table>
+    <tr>
+        <td><b>Ime:</b></td>
+        <td *ngIf="!updating">{{loggedUser.ime}}</td>
+        <td *ngIf="updating">
+            <input type="text" [(ngModel)]="updatedUser.ime">
+        </td>
+    </tr>
+    <tr>
+        <td><b>Prezime:</b></td>
+        <td *ngIf="!updating">{{loggedUser.prezime}}</td>
+        <td *ngIf="updating">
+            <input type="text" [(ngModel)]="updatedUser.prezime">
+        </td>
+    </tr>
+    <tr>
+        <td><b>Adresa:</b></td>
+        <td *ngIf="!updating">{{loggedUser.adresa}}</td>
+        <td *ngIf="updating">
+            <input type="text" [(ngModel)]="updatedUser.adresa">
+    </tr>
+    <tr>
+        <td><b>E-mail adresa:</b></td>
+        <td>{{loggedUser.mejl}}</td>
+    </tr>
+    <tr>
+        <td><b>Telefon:</b></td>
+        <td *ngIf="!updating">{{loggedUser.telefon}}</td>
+        <td *ngIf="updating">
+            <input type="text" [(ngModel)]="updatedUser.telefon">
+    </tr>
+    <tr>
+        <td><b>Broj licence:</b></td>
+        <td *ngIf="!updating">{{loggedUser.broj_licence}}</td>
+        <td *ngIf="updating">
+            <input type="text" [(ngModel)]="updatedUser.broj_licence">
+    </tr>
+    <tr>
+        <td><b>Specijalizacija:</b></td>
+        <td *ngIf="!updating">{{loggedUser.specijalizacija}}</td>
+        <td *ngIf="updating">
+            <input type="text" [(ngModel)]="updatedUser.specijalizacija">
+    </tr>
+    <tr>
+        <td><b>Ogranak:</b></td>
+        <td>{{loggedUser.ogranak_ordinacije}}</td>
+    </tr>
+    <tr colspan="2">
+        <button (click)="updating = true" *ngIf="!updating">Azuriraj</button>
+        <button (click)="updateUser()" *ngIf="updating">Posalji</button>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Naziv</th>
+        <th>Trajanje</th>
+        <th>Cena</th>
+    </tr>
+    <tr *ngFor="let a of chosenExaminations">
+        <td>{{a.naziv}}</td>
+        <td>{{a.trajanje}}</td>
+        <td>{{a.cena}}</td>
+        <td>
+            <button (click)="removeExamination(a)">Izbaci</button>
+        </td>
+    </tr>
+    <tr *ngFor="let a of notChosenExaminations">
+        <td>{{a.naziv}}</td>
+        <td>{{a.trajanje}}</td>
+        <td>{{a.cena}}</td>
+        <td>
+            <button (click)="addExamination(a)">Dodaj</button>
+        </td>
+    </tr>
+</table>
+
+&nbsp;&nbsp;&nbsp;
+<button><a routerLink="/changePassword" style="color:white; text-decoration: none;">Promeni lozinku</a></button>
+
+  
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

@@ -1,0 +1,61 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+
+<h3>Kreiranje izvestaja</h3>
+<table>
+    <tr>
+        <td>Pacijent: </td>
+        <td>{{selectedAppointment.pacijent}}</td>
+    </tr>
+    <tr>
+        <td>Datum pregleda: </td>
+        <td>{{selectedAppointment.datum}}</td>
+    </tr>
+    <tr>
+        <td>Vreme pregleda: </td>
+        <td>{{selectedAppointment.vreme}}</td>
+    </tr>
+    <tr>
+        <td>Lekar: </td>
+        <td>{{loggedUser.ime}} {{loggedUser.prezime}}</td>
+    </tr>
+    <tr>
+        <td>Specijalizacija: </td>
+        <td>{{loggedUser.specijalizacija}}</td>
+    </tr>
+    <tr>
+        <td>Razlog: </td>
+        <td>{{selectedAppointment.pregled}}</td>
+    </tr>
+    <tr>
+        <td>Dijagnoza: </td>
+        <td>
+            <input type="text" [(ngModel)]="diagnosis">
+        </td>
+    </tr>
+    <tr>
+        <td>Preporucena terapija: </td>
+        <td>
+            <input type="text" [(ngModel)]="therapy">
+        </td>
+    </tr>
+    <tr>
+        <td>Preporuceni datum kontrole: </td>
+        <td>
+            <input type="date" [(ngModel)]="checkDate">
+        </td>
+    </tr>
+    <tr colspan="2">
+        <button (click)="sendReport()">
+            Sacuvaj izvestaj
+        </button>
+    </tr>
+</table>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

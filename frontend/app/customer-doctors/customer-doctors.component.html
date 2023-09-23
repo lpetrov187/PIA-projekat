@@ -1,0 +1,67 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+
+<img *ngIf="loggedUser.slika" [src]="loggedUser.slika" alt="Client Image" width="40px" height="40px">
+&nbsp;&nbsp;&nbsp;
+<select [(ngModel)]="selectedPage" (change)="onSelectChange($event)" class="navigation">
+    <option>Profil</option>
+    <option>Lekari</option>
+    <option>Pregledi</option>
+    <option>Obavestenja</option>
+</select>
+
+<h4>Pretrazi i sortiraj lekare:</h4>
+<output>Ime: </output>
+<input type="text" [(ngModel)]="nameParam">
+&nbsp;&nbsp;&nbsp;
+<output>Prezime: </output>
+<input type="text" [(ngModel)]="surnameParam">
+&nbsp;&nbsp;&nbsp;
+<output>Specijalizacija: </output>
+<input type="text" [(ngModel)]="specialisationParam">
+&nbsp;&nbsp;&nbsp;
+<output>Ogranak: </output>
+<input type="text" [(ngModel)]="branchParam">
+&nbsp;
+<button (click)="search()">Pretrazi</button>
+<br>
+<br>
+Sortiraj:
+<select [(ngModel)]="sortingType">
+    <option selected="true">neopadajuce</option>
+    <option>nerastuce</option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<select [(ngModel)]="sortBy">
+    <option>po imenu</option>
+    <option>po prezimenu</option>
+    <option>po specijalizaciji</option>
+    <option>po ogranku</option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<button (click)="sort()">Sortiraj</button>
+<br>
+<br>
+<table>
+    <tr>
+        <th>Slika</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Specijalizacija</th>
+        <th>Ogranak</th>
+    </tr>
+    <tr *ngFor="let a of filteredDoctors" style="text-align: center">
+        <td width="20px">
+            <img *ngIf="a.slika" [src]="a.slika" alt="Client Image" width="40px" height="40px" (click)="showProfile(a)" class="doctorImageReal">
+        </td>
+        <td>{{a.ime}}</td>
+        <td>{{a.prezime}}</td>
+        <td>{{a.specijalizacija}}</td>
+        <td>{{a.ogranak_ordinacije}}</td>
+    </tr>
+</table>
+
+<footer>
+    <a href="" style="color:white" (click)="logout()">Odjavi se</a>
+</footer>

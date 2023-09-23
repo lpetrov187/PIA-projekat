@@ -1,0 +1,56 @@
+<table>
+    <tr>
+        <td>Korisnicko ime: </td>
+        <td>
+            <input type="text" [(ngModel)]="username">
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka: </td>
+        <td>
+            <input type="password" [(ngModel)]="password">
+        </td>
+    </tr>
+    <tr>
+        <td>Potvrdi lozinku: </td>
+        <td>
+            <input type="password" [(ngModel)]="passwordConf">
+        </td>
+    </tr>
+    <tr>
+        <td>Ime: </td>
+        <td>
+            <input type="text" [(ngModel)]="name">
+        </td>
+    </tr>
+    <tr>
+        <td>Prezime: </td>
+        <td>
+            <input type="text" [(ngModel)]="surname">
+        </td>
+    </tr>
+    <tr>
+        <td>Adresa: </td>
+        <td>
+            <input type="text" [(ngModel)]="address">
+        </td>
+    </tr>
+    <tr>
+        <td>Telefon: </td>
+        <input type="text" [(ngModel)]="phone">
+    </tr>
+    <tr>
+        <td>E-mail adresa: </td>
+        <input type="text" [(ngModel)]="email">
+    </tr>
+    <tr>
+        <td>Profilna slika: </td>
+        <input type="file"  accept="image/*" (change)="onFileSelected($event)"  [(ngModel)]="selectedFile" required>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button (click)="register()">Registruj se</button>
+        </td>
+    </tr>
+</table>
+<button (click)="loginPage()">Prijavi se</button>

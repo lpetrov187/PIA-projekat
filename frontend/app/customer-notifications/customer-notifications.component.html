@@ -1,0 +1,30 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+
+<img *ngIf="loggedUser.slika" [src]="loggedUser.slika" alt="Client Image" width="40px" height="40px">
+&nbsp;&nbsp;&nbsp;
+<select [(ngModel)]="selectedPage" (change)="onSelectChange($event)" class="navigation">
+    <option>Profil</option>
+    <option>Lekari</option>
+    <option>Pregledi</option>
+    <option>Obavestenja</option>
+</select>
+<br>
+<table>
+    <tr>
+        <th>Obavestenja</th>
+    </tr>
+    <tr *ngFor="let n of myNotifications">
+        <td [ngStyle]="{'color': n.procitano ? 'black' : 'red'}">
+            {{n.tekst}}
+        </td>
+    </tr>
+    <tr>
+        <button (click)="markAllAsRead()">Oznaci sve kao procitano</button>
+    </tr>
+</table>
+
+<footer>
+    <a href="" style="color:white" (click)="logout()">Odjavi se</a>
+</footer>

@@ -1,0 +1,66 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+<table>
+    <tr>
+        <td>Ime:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.ime">
+        </td>
+    </tr>
+    <tr>
+        <td>Prezime:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.prezime">
+        </td>
+    </tr>
+    <tr>
+        <td>Adresa:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.adresa">
+        </td>
+    </tr>
+    <tr>
+        <td>Telefon:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.telefon">
+        </td>
+    </tr>
+    <tr>
+        <td>Mejl:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.mejl">
+        </td>
+    </tr>
+    <tr *ngIf="userForUpdate.tip=='lekar'">
+        <td>Broj licence:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.broj_licence">
+        </td>
+    </tr>
+    <tr *ngIf="userForUpdate.tip=='lekar'">
+        <td>Specijalizacija:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.specijalizacija">
+        </td>
+    </tr>
+    <tr *ngIf="userForUpdate.tip=='lekar'">
+        <td>Ogranak:</td>
+        <td>
+            <input type="text" [(ngModel)]="userForUpdate.ogranak_ordinacije">
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button (click)="updateUser()">Azuriraj</button>
+        </td>
+    </tr>
+</table>
+
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

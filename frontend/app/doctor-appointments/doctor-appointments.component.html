@@ -1,0 +1,45 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+<select [(ngModel)]="selectedPage" (change)="onSelectChange($event)">
+    <option>Profil</option>
+    <option>Pregledi</option>
+    <option>Razno</option>
+</select>
+<br><br>
+<input type="radio" [(ngModel)]="displayType" id="displayType" value="najskoriji pregledi">najskoriji pregledi
+<br>
+<input type="radio" [(ngModel)]="displayType" id="displayType" value="kalendar">kalendar
+<br>
+<table *ngIf="displayType == 'najskoriji pregledi'">
+    <tr>
+        <th>Pacijent</th>
+        <th>Pregled</th>
+        <th>Datum</th>
+        <th>Vreme</th>
+        <th>Ogranak</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let sa of mostRecentAppointments">
+        <td>
+            <button (click)="getCustomerCard(sa)">{{sa.pacijent}}</button>
+        </td>
+        <td>{{sa.pregled}}</td>
+        <td>{{sa.datum}}</td>
+        <td>{{sa.vreme}}</td>
+        <td>{{sa.ogranak}}</td>
+        <td>
+            <button (click)="cancelAppointment(sa)">Otkazi pregled</button>
+        </td>
+    </tr>
+</table>
+<full-calendar [options]="calendarOptions" *ngIf="displayType == 'kalendar'"></full-calendar>
+
+<button *ngIf="selectedEvent && displayType == 'kalendar'" (click)="getCustomerCardCal()">Karton pacijenta</button>
+<button *ngIf="selectedEvent && displayType == 'kalendar'" (click)="cancelAppointmentCal()">Otkazi pregled</button>
+
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

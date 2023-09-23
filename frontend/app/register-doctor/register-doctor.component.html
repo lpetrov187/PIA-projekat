@@ -1,0 +1,79 @@
+<table>
+    <tr>
+        <td>Korisnicko ime: </td>
+        <td>
+            <input type="text" [(ngModel)]="username">
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka: </td>
+        <td>
+            <input type="password" [(ngModel)]="password">
+        </td>
+    </tr>
+    <tr>
+        <td>Potvrdi lozinku: </td>
+        <td>
+            <input type="password" [(ngModel)]="passwordConf">
+        </td>
+    </tr>
+    <tr>
+        <td>Ime: </td>
+        <td>
+            <input type="text" [(ngModel)]="name">
+        </td>
+    </tr>
+    <tr>
+        <td>Prezime: </td>
+        <td>
+            <input type="text" [(ngModel)]="surname">
+        </td>
+    </tr>
+    <tr>
+        <td>Adresa: </td>
+        <td>
+            <input type="text" [(ngModel)]="address">
+        </td>
+    </tr>
+    <tr>
+        <td>Telefon: </td>
+        <td>
+            <input type="text" [(ngModel)]="phone">
+        </td>   
+    </tr>
+    <tr>
+        <td>E-mail adresa: </td>
+        <td>
+            <input type="text" [(ngModel)]="email">
+        </td>   
+    </tr>
+    <tr>
+        <td>Broj licence: </td>
+        <td>
+            <input type="text" [(ngModel)]="licenceNum">
+        </td>
+    </tr>
+    <tr>
+        <td>Specijalizacija: </td>
+        <td>
+            <input type="text" [(ngModel)]="specialisation">
+        </td>
+    </tr>
+    <tr>
+        <td>Ogranak ordinacije: </td>
+        <td>
+            <input type="text" [(ngModel)]="branch">
+        </td>
+    </tr>
+    <tr>
+        <td>Profilna slika: </td>
+        <td>
+            <input type="file"  accept="image/*" (change)="onFileSelected($event)"  [(ngModel)]="selectedFile" required>
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button (click)="register()">Registruj se</button>
+        </td>
+    </tr>
+</table>

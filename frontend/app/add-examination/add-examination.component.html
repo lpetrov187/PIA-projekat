@@ -1,0 +1,46 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+
+<h3>Dodaj novu vrstu pregleda</h3>
+<br>
+<table>
+    <tr>
+        <td>Naziv pregleda: </td>
+        <td>
+            <input type="text" [(ngModel)]="name">
+        </td>
+    </tr>
+    <tr>
+        <td>Trajanje: </td>
+        <td>
+            <input type="text" [(ngModel)]="len"> min
+        </td>
+    </tr>
+    <tr>
+        <td>Cena: </td>
+        <td>
+            <input type="text" [(ngModel)]="price"> RSD
+        </td>
+    </tr>
+    <tr>
+        <td>Specijalizacija: </td>
+        <td>
+            <select [(ngModel)]="spec" class="selectSpec">
+                <option *ngFor="let a of specialisations">{{a.naziv}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button (click)="addExamination()">Dodaj pregled</button>
+        </td>
+    </tr>
+</table>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="back()">Nazad</a>
+    &nbsp;&nbsp;&nbsp;
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>

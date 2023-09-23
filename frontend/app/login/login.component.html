@@ -1,0 +1,101 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+<div class="centered-right">
+    <div class="image-container">
+        <img
+        *ngFor="let image of images; let i = index"
+        [src]="image"
+        alt="Gallery Image"
+        [class.active]="i === currentImageIndex"
+        [style.zIndex]="i === currentImageIndex ? '2' : '1'"
+        class="carousel"
+      />
+    </div>
+    <div class="text">
+        <p>Ordinacija Petrov je moderna zdravstvena ustanova koja 
+            pruza visokokvalitetnu medicinsku negu. Tim strucnih lekara i
+             medicinskog osoblja posvecen je pacijentima, prateci najnovije medicinske
+              trendove i tehnologiju. Ordinacija nudi širok spektar medicinskih usluga,
+               ukljucujuci dijagnostiku, lecenje i prevenciju bolesti. Nasa posvecenost 
+               pacijentima i profesionalnost čine nas veoma pouzdanim partnerom za ocuvanje zdravlja.
+                Petrov ordinacija je sinonim za kvalitet i paznju prema pacijentima. Ordinacija Petrov je opremljena najsavremenijom 
+                medicinskom opremom i pruza brzu i preciznu dijagnostiku. Nasa usluga je personalizovana,
+                 pa pacijenti mogu ocekivati individualno pristupanje njihovim zdravstvenim potrebama. 
+                Ordinacija Petrov se istice dugogodišnjim iskustvom i visokim standardima medicinske prakse.</p>
+    </div>
+</div>
+
+
+<br>
+<table>
+    <tr>
+        <td>Korisnicko ime: </td>
+        <td>
+            <input type="text" [(ngModel)]="username">
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka: </td>
+        <td>
+            <input type="password" [(ngModel)]="password" (keyup.enter)="onEnterKey($event)">
+        </td>
+    </tr>
+    <tr colspan="2">
+        <td>
+            <button #submitButton (click)="login()">Prijavi se</button>
+        </td>
+    </tr>
+</table>
+&nbsp;
+<output><a routerLink="register-customer">Registruj se</a></output>
+<br>
+<output style="color:red">{{this.message}}</output>
+
+<br>
+&nbsp;
+<output>Ime: </output>
+<input type="text" [(ngModel)]="nameParam">
+&nbsp;&nbsp;&nbsp;
+<output>Prezime: </output>
+<input type="text" [(ngModel)]="surnameParam">
+&nbsp;&nbsp;&nbsp;
+<output>Specijalizacija: </output>
+<input type="text" [(ngModel)]="specialisationParam">
+&nbsp;
+<button (click)="search()">Pretrazi</button>
+<br>
+<br>&nbsp;
+Sortiraj:
+<select [(ngModel)]="sortingType">
+    <option selected="true">neopadajuce</option>
+    <option>nerastuce</option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<select [(ngModel)]="sortBy">
+    <option>po imenu</option>
+    <option>po prezimenu</option>
+    <option>po specijalizaciji</option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<button (click)="sort()">Sortiraj</button>
+<br>
+<br>
+<table>
+    <tr>
+        <th>Slika</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Specijalizacija</th>
+    </tr>
+    <tr *ngFor="let a of filteredDoctors">
+        <td width="20px"><img *ngIf="a.slika" [src]="a.slika" alt="Client Image" width="40px" height="40px" class="doctorImage"></td>
+        <td>{{a.ime}}</td>
+        <td>{{a.prezime}}</td>
+        <td>{{a.specijalizacija}}</td>
+    </tr>
+</table>
+
+<footer>
+</footer>

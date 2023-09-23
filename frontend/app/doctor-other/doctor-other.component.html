@@ -1,0 +1,31 @@
+<header>
+    <h3 class="naslov">Lekarska ordinacija Petrov</h3>
+</header>
+<br>
+<select [(ngModel)]="selectedPage" (change)="onSelectChange($event)">
+    <option>Profil</option>
+    <option>Pregledi</option>
+    <option>Razno</option>
+</select>
+<h4>Zatrazi slobodan dan</h4>
+<table>
+    <tr>
+        <td>Unesite datum:</td>
+        <td>
+            <input type="date" [(ngModel)]="date">
+        </td>
+    </tr>
+    <tr>
+        <button (click)="requestVacation()" aria-colspan="2">Zatrazi</button>
+        <td></td>
+    </tr>
+</table>
+<br><br>
+<h4>Zatrazi dodavanje novog pregleda</h4>
+<button (click)="navigateToRequest()">
+    Zatrazi
+</button>
+
+<footer>
+    <a style="color:white; text-decoration: underline;" (click)="logout()">Odjavi se</a>
+</footer>
