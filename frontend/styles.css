@@ -1,0 +1,205 @@
+button {
+  background-color: #3498db; /* Blue color */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border: 2px solid #1c5982; /* Add a 2px solid border matching the background color */
+  border-radius: 20px; /* Increased border-radius for a rounded shape */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth color and border transition */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #2980b9; /* Darker blue color on hover */
+  border-color: #2980b9; /* Change border color on hover */
+}
+
+/* Style the select element */
+select {
+  width: 12%; /* Make the select element expand to its container's width */
+  padding: 10px; /* Add padding for visual appeal */
+  font-size: 16px; /* Font size */
+  border: 2px solid #3498db; /* Add a 2px solid border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #ffffff; /* White background color */
+  color: #333; /* Text color */
+}
+
+/* Style the option elements */
+select option {
+  padding: 10px; /* Add padding for visual appeal */
+  font-size: 16px; /* Font size */
+  background-color: #ffffff; /* White background color */
+  color: #333; /* Text color */
+}
+
+/* Style the select when it's focused */
+select:focus {
+  border-color: #2980b9; /* Change border color when focused */
+}
+
+/* Style the table */
+table {
+  width: 60%;
+  border-collapse: collapse; /* Remove spacing between table cells */
+  margin-bottom: 20px; /* Add spacing between tables */
+}
+
+/* Style table headers (th) */
+th {
+  background-color: #3498db; /* Header background color */
+  color: #ffffff; /* Header text color */
+  padding: 10px; /* Padding for header cells */
+}
+
+/* Style table data (td) */
+td {
+  border: 1px solid #ccc; /* Border for data cells */
+  padding: 10px; /* Padding for data cells */
+}
+
+/* Add alternating row background colors */
+/* tr:nth-child(even) {
+  background-color: #f2f2f2; 
+} */
+
+/* Hover effect for table rows */
+/* tr:hover {
+  background-color: #e0e0e0;
+} */
+
+img {
+  width: 5%;
+  height: auto;
+}
+
+/* Style textboxes */
+input[type="text"] {
+  padding: 10px; /* Add padding for visual appeal */
+  font-size: 16px; /* Font size */
+  border: 2px solid #3498db; /* Add a 2px solid border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #ffffff; /* White background color */
+  color: #333; /* Text color */
+}
+
+/* Style the textbox when it's focused */
+input[type="text"]:focus {
+  border-color: #2980b9; /* Change border color when focused */
+}
+
+input[type="password"] {
+  padding: 10px; /* Add padding for visual appeal */
+  font-size: 16px; /* Font size */
+  border: 2px solid #3498db; /* Add a 2px solid border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #ffffff; /* White background color */
+  color: #333; /* Text color */
+}
+
+/* Style the textbox when it's focused */
+input[type="password"]:focus {
+  border-color: #2980b9; /* Change border color when focused */
+}
+
+.doctorImage{
+  width: 100%;
+}
+
+.doctorImageReal{
+  width: 100%;
+  cursor: pointer;
+}
+
+.selectSpec{
+  width: 30%;
+}
+
+/* Header styles */
+header {
+  height: 50px;
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Footer styles */
+footer {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.naslov {
+  text-align: center;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.visible {
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+.hidden {
+  display: none;
+}
+.image-container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+img.carousel {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* transition: opacity 1s ease-out; */
+}
+
+img.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+div.centered-right{
+  width: 100%;
+  height: 408px;
+}
+
+div.image-container {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+div.text {
+  float: right;
+  width: 50%;
+  font-family: Arial;
+  font-size: large;
+  padding-right: 10px;
+}
